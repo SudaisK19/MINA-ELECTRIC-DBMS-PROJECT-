@@ -1,0 +1,93 @@
+{
+  "categories": [
+    { "id": 4, "title": "Street Lights" },
+    { "id": 5, "title": "Flood Lights" },
+    { "id": 6, "title": "Solar Lights" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "catId": 4,
+      "title": "LED Street Light 50W",
+      "product_code": "ST-LT-50W",
+      "image": "/assets/streetlight1.jpg",
+      "price": 120,
+      "sku": "ST-LT-001",
+      "description": "A high-efficiency 50W LED street light for outdoor lighting.",
+      "specs": "Power: 50W, Luminous Flux: 6000lm, IP Rating: IP65",
+      "features": ["Energy-saving", "Waterproof", "Long lifespan"],
+      "dimensions": "600mm x 300mm x 70mm",
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "catId": 4,
+      "title": "Solar Street Light 100W",
+      "product_code": "ST-SLR-100W",
+      "image": "/assets/streetlight2.jpg",
+      "price": 250,
+      "sku": "ST-LT-002",
+      "description": "A 100W solar-powered street light with automatic on/off feature.",
+      "specs": "Power: 100W, Battery: 20AH, IP Rating: IP66",
+      "features": ["Solar-powered", "Automatic on/off", "Weather-resistant"],
+      "dimensions": "750mm x 350mm x 80mm",
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "catId": 5,
+      "title": "LED Flood Light 150W",
+      "product_code": "FL-LT-150W",
+      "image": "/assets/floodlight1.jpg",
+      "price": 180,
+      "sku": "FL-LT-001",
+      "description": "A 150W LED flood light suitable for large outdoor areas.",
+      "specs": "Power: 150W, Luminous Flux: 18000lm, IP Rating: IP66",
+      "features": ["High brightness", "Durable", "Waterproof"],
+      "dimensions": "400mm x 350mm x 90mm",
+      "stock": 40
+    },
+    {
+      "id": 4,
+      "catId": 5,
+      "title": "Portable LED Flood Light 50W",
+      "product_code": "FL-PT-50W",
+      "image": "/assets/floodlight2.jpg",
+      "price": 80,
+      "sku": "FL-LT-002",
+      "description": "A 50W portable LED flood light for versatile use.",
+      "specs": "Power: 50W, Battery: 10AH, IP Rating: IP65",
+      "features": ["Portable", "Rechargeable", "Waterproof"],
+      "dimensions": "250mm x 200mm x 70mm",
+      "stock": 60
+    },
+    {
+      "id": 5,
+      "catId": 6,
+      "title": "Solar Garden Light",
+      "product_code": "SL-GRD-10W",
+      "image": "/assets/solarlight1.jpg",
+      "price": 30,
+      "sku": "SL-GRD-001",
+      "description": "A 10W solar garden light with automatic dusk-to-dawn function.",
+      "specs": "Power: 10W, Battery: 5AH, IP Rating: IP44",
+      "features": ["Solar-powered", "Easy installation", "Weather-resistant"],
+      "dimensions": "200mm x 150mm x 60mm",
+      "stock": 100
+    },
+    {
+      "id": 6,
+      "catId": 6,
+      "title": "Solar Security Light 20W",
+      "product_code": "SL-SCR-20W",
+      "image": "/assets/solarlight2.jpg",
+      "price": 60,
+      "sku": "SL-GRD-002",
+      "description": "A 20W solar-powered security light with motion sensor.",
+      "specs": "Power: 20W, Battery: 8AH, IP Rating: IP65",
+      "features": ["Motion sensor", "Solar-powered", "Weather-resistant"],
+      "dimensions": "300mm x 250mm x 70mm",
+      "stock": 80
+    }
+  ]
+}

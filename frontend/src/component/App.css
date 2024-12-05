@@ -1,0 +1,305 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+ color: darkslategrey;
+ text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+   
+  background:linear-gradient(to left, #65a8ef, white);
+}
+
+
+
+
+/* Header Styles */
+header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out elements across the header */
+  align-items: center; /* Vertically center content */
+  padding: 10px 20px; /* Add spacing */
+  background-color: #007bff; /* Header background color */
+  color: white; /* Header text/icon color */
+}
+
+header .profile-section {
+  flex: 0 0 auto; /* Fixed size for the profile section */
+}
+
+header .title-section {
+  flex: 1; /* Take the remaining space to center the title */
+  text-align: center;
+}
+
+header .icons-section {
+  flex: 0 0 auto; /* Fixed size for the wishlist and cart icons */
+  display: flex;
+  gap: 20px; /* Space between icons */
+}
+
+
+header .profile-section a,
+header .icons-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header .profile-section a:hover,
+header .icons-section a:hover {
+  color: #f8f9fa;
+}
+
+
+
+#search {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin: 10px 0;
+}
+
+#search input {
+  margin-left: 10px;
+  height: 30px;
+  width: 200px; 
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Flexbox Container */
+section {
+  display: flex; /* Or your flex configuration */
+  /*background-image: url('./how-using-led-lights-can-help-you-save-money.jpg');*/ /* Path to your image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; 
+  min-height: 400px; 
+}
+
+/* Navigation Menu Styling */
+nav {
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center items */
+  background: rgba(204, 204, 204, 0.8); /* Grey with transparency */
+  padding: 10px 0;
+  border-bottom: 1px transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Space between categories */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  font-size: 1rem;
+  font-weight: bold;
+  color: darkslategrey;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+nav ul li.active {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Main Content */
+main {
+  padding: 30px;
+  /* Light color with transparency */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Grid */
+article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for responsiveness */
+  gap: 20px;
+  margin: 20px auto;
+  width: 95%; /* Take full width with padding */
+  text-align: center;
+  padding: 10px;
+}
+
+article:hover {
+  box-shadow: none; /* Remove hover shadow */
+  transform: none; /* Remove hover scaling */
+}
+
+/* Product Title 
+ .category-product-title {
+  grid-column: 1 / span 3;
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+
+ Product Image 
+.category-product-image-container {
+  padding: 10px;
+  width: 100%; Full width within grid item 
+}
+
+.category-product-image-container img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.category-product-image-container img:hover {
+  transform: scale(1.05);
+}
+
+ Product Info 
+.category-product-info-header {
+  display: flex;
+  justify-content: center;  Center content horizontally 
+}
+
+.category-product-info-dimensions,
+.category-product-info-features {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-product-info-dimensions h3,
+.category-product-info-features h3 {
+  color: darkslateblue;
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.category-product-info-features li {
+  padding-top: 5px;
+}
+
+ Product Stock Info 
+.category-product-info-stock {
+  padding-left: 10px;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: lightblue;
+  height: 20%;
+  width: 100%;  Full width within grid item 
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center; Center content vertically 
+}
+
+.category-product-info-stock label {
+  padding-bottom: 5px;
+}
+
+ Product Actions 
+.category-product-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  Center buttons horizontally 
+}
+
+.category-product-action button {
+  margin-top: 20px;
+  background-color: var(--accent-color);
+  height: 40px;
+  width: 180px;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.category-product-action button:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.category-product-action button:last-child {
+  background-color: darkblue;
+  color: white;
+}
+
+.category-product-action button:last-child:hover {
+  background-color: #001f4d;
+  transform: translateY(-3px);
+} */
+
+/* Footer Styling */
+footer {
+  background-color: #007BFF;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+}
+footer a {
+   color: whitesmoke;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  header {
+      font-size: 20px;
+      padding: 15px;
+  }
+
+  section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+  }
+
+  nav {
+      flex: 1 1 100%; /* Make nav take full width on small screens */
+      padding: 10px;
+  }
+
+  article {
+      flex: 1 1 100%;
+      padding: 10px;
+  }
+
+  footer {
+      font-size: 14px;
+      padding: 10px;
+  }
+}
+
+/* CSS Variables for easy maintenance */
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #0056b3;
+  --accent-color: #4CAF50;
+  --font-family: 'Roboto', sans-serif;
+  --font-size-large: 1.5em;
+  --font-size-medium: 1em;
+  --font-size-small: 0.85em;
+} 
